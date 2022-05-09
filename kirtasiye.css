@@ -1,0 +1,21 @@
+body {
+    background-color: #FCFFE7;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    text-align:center; 
+    color: #C65D7B;
+}
+
+div { 
+    text-align: center; 
+}
+ol { 
+    list-style-position: inside;
+    display: inline-block; 
+}
+
+li {
+    color:#05595B
+}
