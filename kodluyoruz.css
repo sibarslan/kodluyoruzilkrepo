@@ -1,9 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+   /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 50px auto 0;
+}
+
+.left-bar {
+    width: 200px;
+    float:left;
+}
+
+.content {
+    width: 800px;
+    float:left;
+}
+
+.card {
+    width: %20;
+    float: left;
+    padding: %5;
+    background-color: rgb(209,209,209);
+    margin-right: %2;
+    border-radius: 10px;
+}
+
+.clear {
+    clear:both
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    float:left;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
 /*
 Açıklama Satırı 
 */
 
 /* class -> .text-red {} */
 /* id -> #id-bilgisi {}*/
+
+/* css selectors */
+
+/*
+li:first-child {
+    color: green;
+}
+
+li:last-child {
+    color: aqua;
+}
+*/
+
+/*
+li:nth-child(odd) {
+    color: red;
+}
+
+li:nth-child(even) {
+    color: blue;
+}
+*/
+
+/*
+li:nth-child(2n-1) {
+    color: brown;
+}
+
+.color-blue .fw-normal {
+    color: blue;
+    font-weight: normal;
+}
 
 h1,h2,h3,h4,h5,h6 {
     color: #202020;
@@ -37,3 +124,5 @@ p {
     font-size: 30px;
 
 }
+*/
+
