@@ -9,6 +9,23 @@ table {
 }
 
 
+#fbox {
+    width=37%;
+    background-color:#7EE5DA;
+    border: 5px solid #7EE5DA;
+}
+
+#sbox {
+    background-color:#70CCC2;
+    border: 5px solid #70CCC2;
+
+}
+
+#tbox {
+    background-color:#62B3AA;
+    border: 5px solid #62B3AA;
+}
+
 p {
     text-align:center;
     font-size: smaller;
