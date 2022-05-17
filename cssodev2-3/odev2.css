@@ -4,10 +4,6 @@ table {
     border: 0;
 }
 
-::placeholder {
-    color:black;
-}
-
 
 #fbox {
     width=37%;
@@ -24,6 +20,10 @@ table {
 #tbox {
     background-color:#62B3AA;
     border: 5px solid #62B3AA;
+}
+
+::placeholder {
+    color:black;
 }
 
 p {
