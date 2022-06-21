@@ -1,7 +1,6 @@
 # Veri Yapıları ve Algoritmalar 
----
+
 ## **MERGE SORT PROJESİ**
----
 
 ![merge](/data-structures%26algorithms/merge-sort.png)
 

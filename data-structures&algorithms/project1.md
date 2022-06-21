@@ -1,10 +1,8 @@
 # Veri Yapıları ve Algoritmalar 
----
 
 ## **INSERTION SORT PROJESİ**
----
-![insertion](/data-structures%26algorithms/insertion-sort.png)
 
+![insertion](/data-structures%26algorithms/insertion-sort.png)
 
 ### 1. SORU
 

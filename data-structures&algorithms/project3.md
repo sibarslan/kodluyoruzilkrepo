@@ -1,7 +1,6 @@
 # Veri Yapıları ve Algoritmalar 
----
+
 ## **BINARY SEARCH TREE PROJESİ**
----
 
 ![binary-search-tree](/data-structures%26algorithms/binary-search-tree.png)
 
