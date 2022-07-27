@@ -81,3 +81,103 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
+
+/* */
+
+//buton ve menü seçimi
+
+const btnDOM=document.querySelector(".btn-container")
+const menuDOM=document.querySelector(".section-center")
+
+//butonları oluşturacak fonskiyon
+
+const createBtn = () => {
+  let buttons = `
+    <button class="btn btn-outline-dark btn-item" id="All">All</button>
+    <button class="btn btn-outline-dark btn-item" id="Korea">Korea</button>
+    <button class="btn btn-outline-dark btn-item" id="Japan">Japan</button>
+    <button class="btn btn-outline-dark btn-item" id="China">China</button>
+  `
+  btnDOM.innerHTML = buttons;
+}
+createBtn();
+
+//menüdeki yemekleri oluşturacak fonksiyon
+
+const dishes=(food)=> {
+  let dish=`
+    <div class="menu-items col-lg-6 col-sm-12">
+      <img src="${food.img}" alt="${food.title}" class="photo">
+      <div class="menu-info">
+        <div class="menu-title">
+          <h4>${food.title}</h4>
+          <h4 class="price">${food.price}</h4>
+        </div>
+        <div class="menu-text">
+          ${food.desc}
+        </div>
+      </div>
+    </div> 
+  `
+  return dish;
+}
+
+//menüdeki tüm yemekleri listeleyecek fonksiyon
+
+const showDishes=()=> {
+  let allDishes=""
+  menu.map(food=>{
+    allDishes+=dishes(food)
+  })
+  menuDOM.innerHTML=allDishes;
+}
+
+document.addEventListener("DOMContentLoaded",showDishes) 
+allBtn = document.querySelector("#All") //tüm yemekleri gösterecek butonu seçtik
+allBtn.addEventListener("click",showDishes) //tüm yemekleri gösterecek event listener
+
+//Kore yemeklerini gösterecek fonksiyon
+
+btnKorea=document.querySelector("#Korea") //kore yemeklerini seçtik
+
+const showKorean=()=>{
+  let koreanDishes=""
+  menu.map(food=>{
+    if(food.category==="Korea"){
+      koreanDishes+=dishes(food)
+    }
+  })
+  menuDOM.innerHTML=koreanDishes;
+}
+btnKorea.addEventListener("click", showKorean); //kore yemeklerini gösterecek event listener
+
+
+//Japon yemeklerini gösterecek fonksiyon
+
+btnJapan=document.querySelector("#Japan") //japon yemeklerini seçtik
+
+const showJapan=()=>{
+  let japaneseDishes=""
+  menu.map(food=>{
+    if(food.category==="Japan"){
+      japaneseDishes+=dishes(food)
+    }
+  })
+  menuDOM.innerHTML=japaneseDishes;
+}
+btnJapan.addEventListener("click", showJapan); //japon yemeklerini gösterecek event listener
+
+//Çin yemeklerini gösterecek fonksiyon
+
+btnChina=document.querySelector("#China") //çin yemeklerini seçtik
+
+const showChina=()=>{
+  let chineseDishes=""
+  menu.map(food=>{
+    if(food.category==="China"){
+      chineseDishes+=dishes(food)
+    }
+  })
+  menuDOM.innerHTML=chineseDishes;
+}
+btnChina.addEventListener("click", showChina); //çin yemeklerini gösterecek event listener
